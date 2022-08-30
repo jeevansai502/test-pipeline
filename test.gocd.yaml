@@ -9,9 +9,13 @@ pipelines:
           jobs:
             html:
               artifacts:
-               - build:
-                   source: a.html
-                   destination: ''
+               - external:
+                   id: "test-123"
+                   store_id: "test-store"
+                   configuration:
+                      options:
+                        Source: a.html
+                        Destination: "${{GO_ARTIFACT_LOCATOR}}"
               tasks:
                - exec:
                    arguments:

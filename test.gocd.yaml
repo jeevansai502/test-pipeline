@@ -1,6 +1,6 @@
 pipelines:
   pipe1:
-    group: testgroup
+    group: defaultGroup
     materials:
       mygit:
         git: https://github.com/jeevansai502/entity-examples.git

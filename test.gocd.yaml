@@ -1,0 +1,17 @@
+pipelines:
+  pipe1:
+    group: simple
+    materials:
+      mygit:
+        git: https://github.com/jeevansai502/entity-examples.git
+    stages:
+      - html:
+          jobs:
+            html:
+              artifacts:
+               - build:
+                   source: a.html
+                   destination: ''
+              tasks:
+               - exec:
+                   command: echo "<html><body><a href="https://www.google.com">mobile-app.apk</a></body></html>" > a.html

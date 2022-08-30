@@ -15,7 +15,7 @@ pipelines:
                    configuration:
                       options:
                         Source: a.html
-                        Destination: "${{GO_ARTIFACT_LOCATOR}}"
+                        Destination: "${GO_ARTIFACT_LOCATOR}"
               tasks:
                - exec:
                    arguments:

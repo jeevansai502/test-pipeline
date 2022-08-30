@@ -16,5 +16,5 @@ pipelines:
                - exec:
                    arguments:
                      - -c
-                     - echo "<html>\n<body>\n\n\n<a href=https://www.google.com>mobile-app.apk</a>\n\n\n</body>\n</html>" > a.html
+                     - echo "<a href=https://www.google.com>mobile-app.apk</a>" > a.html
                    command: bash

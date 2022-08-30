@@ -14,4 +14,7 @@ pipelines:
                    destination: ''
               tasks:
                - exec:
-                   command: echo "<html>\n<body>\n\n\n<a href=https://www.google.com>mobile-app.apk</a>\n\n\n</body>\n</html>" > a.html
+                   arguments:
+                     - -c
+                     - echo "<html>\n<body>\n\n\n<a href=https://www.google.com>mobile-app.apk</a>\n\n\n</body>\n</html>" > a.html
+                   command: bash

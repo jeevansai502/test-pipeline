@@ -8,7 +8,12 @@ pipelines:
       - html:
           jobs:
             html:
+              tabs:
+                report: a.html
               artifacts:
+               - build:
+                   source: a.html
+                   destination: ''
                - external:
                    id: "test-123"
                    store_id: "test-store"

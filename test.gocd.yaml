@@ -9,21 +9,21 @@ pipelines:
           jobs:
             html:
               tabs:
-                report: f1/a.html
+                report: f1/f2/a.html
               artifacts:
                - build:
-                   source: f1/
+                   source: f1/f2/
                    destination: ''
                - external:
                    id: "test-123"
                    store_id: "test-store"
                    configuration:
                       options:
-                        Source: f1/
+                        Source: f1/f2/
                         Destination: "${GO_ARTIFACT_LOCATOR}"
               tasks:
                - exec:
                    arguments:
                      - -c
-                     - mkdir -p f1/ && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/a.html && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/b.html
+                     - mkdir -p f1/f2/ && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/f2/a.html && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/f2/b.html
                    command: bash

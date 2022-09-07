@@ -12,14 +12,14 @@ pipelines:
                 report: f1/f2/a.html
               artifacts:
                - build:
-                   source: f1/f2/
+                   source: f1/
                    destination: ''
                - external:
                    id: "test-123"
                    store_id: "test-store"
                    configuration:
                       options:
-                        Source: f1/f2/
+                        Source: f1/
                         Destination: "${GO_ARTIFACT_LOCATOR}"
               tasks:
                - exec:

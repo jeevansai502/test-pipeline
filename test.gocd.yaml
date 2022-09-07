@@ -25,5 +25,5 @@ pipelines:
                - exec:
                    arguments:
                      - -c
-                     - mkdir -p f1/f2/ && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/f2/a.html && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/f2/b.html
+                     - mkdir -p f1/f2/f3/ && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/a.html && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/f2/b.html && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/f2/f3/c.html
                    command: bash

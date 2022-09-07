@@ -9,7 +9,7 @@ pipelines:
           jobs:
             html:
               tabs:
-                report: f1/f2/a.html
+                report: f1/a.html
               artifacts:
                - build:
                    source: f1/
@@ -25,5 +25,5 @@ pipelines:
                - exec:
                    arguments:
                      - -c
-                     - mkdir -p f1/f2 && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/f2/a.html
+                     - mkdir -p f1/ && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/a.html
                    command: bash

@@ -12,7 +12,7 @@ pipelines:
                 report: f1/f2/a.html
               artifacts:
                - build:
-                   source: f1/
+                   source: f1/**/*.*
                    destination: ''
                - external:
                    id: "test-123"

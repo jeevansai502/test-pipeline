@@ -19,11 +19,11 @@ pipelines:
                    store_id: "test-store"
                    configuration:
                       options:
-                        Source: temp.html
+                        Source: temp1
                         Destination: "${GO_ARTIFACT_LOCATOR}"
               tasks:
                - exec:
                    arguments:
                      - -c
-                     - touch temp.html && mkdir -p f1/f2/f3/ && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/a.html && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/f2/b.html && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/f2/f3/c.html
+                     - touch temp1 && mkdir -p f1/f2/f3/ && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/a.html && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/f2/b.html && echo "<a href=https://www.google.com>mobile-app.apk</a>" > f1/f2/f3/c.html
                    command: bash

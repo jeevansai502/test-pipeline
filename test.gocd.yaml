@@ -19,7 +19,7 @@ pipelines:
                    store_id: "test-store"
                    configuration:
                       options:
-                        Source: f1/**/*.html
+                        Source: f1/**/*
                         Destination: "${GO_ARTIFACT_LOCATOR}"
               tasks:
                - exec:
